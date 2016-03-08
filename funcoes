@@ -1,0 +1,30 @@
+//FUNCOES
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void imprimeNumero( int n );
+int calcularIdade(int ano);
+int main()
+{
+    int num;
+    printf("INFORME UM NUMERO: \n");
+    scanf("%d",&num);
+    imprimeNumero(num);
+
+    printf("INFORME SEU ANO DE NASCIMENTO:\n");
+    int ano;
+    scanf("%d",&ano);
+    printf(" Voce tem %d de idade ",calcularIdade(ano));
+
+    return 0;
+}
+
+void imprimeNumero( int n ){
+    printf("%d",n);
+}
+
+int calcularIdade(int ano){
+    return 2016-ano;
+
+}
